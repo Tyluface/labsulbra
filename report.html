@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Stok - Relatorio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="logo2.png" alt="logo2">
+      </div>
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="main.html">Produtos</a>
+        </li>
+        <li class="menu-item active">
+          <a href="report.html">Relatórios</a>
+        </li>
+        <li class="menu-item">
+          <a href="config.html">Configuração</a>
+        </li>
+        <li class="menu-item">
+          <a href="index.html">Sair</a>
+        </li>
+      </ul>
+    </aside>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-top">
+        <!-- Search bar -->
+        <div class="search-bar">
+          <input type="text" placeholder="Pesquisar..." />
+          <button class="btn-search">🔍</button>
+        </div>
+        <!-- Notifications -->
+        <button class="btn-notification">
+          🔔
+          <span class="notification-count">3</span>
+        </button>
+      </div>
+      <!-- Title -->
+      <h2>Relatório</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="buttons-container">
+        <button id="btnGenerateReport" class="btn btn-outline">
+          <span>🖨️</span> Gerar Relatório
+        </button>
+      </div>
+      <section>
+        <!-- Tabela inicialmente escondida -->
+        <table id="reportTable" style="display: none;">
+          <tbody>  
+            <thead>          
+              <tr>
+                <th>Cód. do Produto</th>
+                <th>Nome do Produto</th>
+                <th>Quantidade</th>
+                <th>Tipo</th>
+                <th>Marca</th>
+                <th>Preço de Compra</th>
+                <th>Preço de Venda</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+          </tbody>
+        </table>
+        <script src="script.js"></script>  
+      </section>
+   
+    </div>
+  </body>
+
+  </html>
